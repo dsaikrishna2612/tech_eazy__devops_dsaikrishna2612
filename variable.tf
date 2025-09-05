@@ -26,10 +26,6 @@ variable "instance_type" {
   type        = string
 }
 
-variable "key_name" {
-  description = "Key Pair name"
-  type        = string
-}
 
 variable "env_name" {
   description = "Environment name (dev/prod)"
