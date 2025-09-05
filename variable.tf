@@ -31,3 +31,8 @@ variable "env_name" {
   description = "Environment name (dev/prod)"
   type        = string
 }
+
+variable "alert_email" {
+  description = "Email address that will be subscribed to SNS alerts"
+  type        = string
+}
