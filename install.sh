@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Redirect all stdout & stderr of this script into app.log (and console)
+exec > >(tee -a /home/ec2-user/app.log) 2>&1
+
+
 # --- CloudWatch Agent setup ---
 echo "☁️ Installing and configuring CloudWatch Agent..."
 
